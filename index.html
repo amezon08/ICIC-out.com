@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Banking Login Clone</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <div class="logo">i</div>
+            <div class="brand-text">ICICI Bank</div>
+        </div>
+
+        <nav class="topnav">
+            <a href="#">NRI</a>
+            <a href="#">Business</a>
+        </nav>
+
+        <div class="rightbar">
+            <div class="phone">📞 1800 1080</div>
+            <button class="login-btn">Login ▾</button>
+        </div>
+    </header>
+
+    <main class="hero">
+        <section class="left-panel">
+            <h1>Welcome to the new Net Banking experience.</h1>
+
+            <div class="laptop">
+                <div class="screen">
+                    <div class="screen-top"></div>
+                    <div class="screen-body">
+                        <div class="sidebar">
+                            <div class="side-item active">Overview</div>
+                            <div class="side-item">Accounts</div>
+                            <div class="side-item">Deposits</div>
+                            <div class="side-item">Cards</div>
+                            <div class="side-item">Loans</div>
+                        </div>
+
+                        <div class="dashboard">
+                            <div class="dash-card big"></div>
+                            <div class="dash-row">
+                                <div class="mini"></div>
+                                <div class="mini"></div>
+                                <div class="mini"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="laptop-base"></div>
+            </div>
+
+            <div class="floating-tag tag1">OVERVIEW</div>
+            <div class="floating-tag tag2">ACCOUNTS</div>
+            <div class="floating-tag tag3">DEPOSITS</div>
+            <div class="floating-tag tag4">CREDIT CARDS</div>
+            <div class="floating-tag tag5">PAYMENT &amp; TRANSFER</div>
+        </section>
+
+        <section class="login-card">
+            <div class="card-header">
+                <span class="lock">🔒</span>
+                <h2>Login to Net Banking</h2>
+            </div>
+
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('user')">User ID</button>
+                <button class="tab" onclick="showTab('mobile')">Mobile No</button>
+                <button class="tab" onclick="showTab('qr')">QR Code</button>
+            </div>
+
+            <div class="form-area">
+                <label id="fieldLabel" for="loginField">User ID</label>
+                <div class="input-wrap">
+                    <input id="loginField" type="text" placeholder="Enter User ID" />
+                    <button class="icon-btn">⌨</button>
+                </div>
+                <p class="help-text" id="helperText">Please enter your User ID</p>
+
+                <div class="row">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        <span>Remember User ID</span>
+                    </label>
+                    <a href="#" class="link">Get User ID</a>
+                </div>
+
+                <label for="password">Password</label>
+                <div class="input-wrap">
+                    <input id="password" type="password" placeholder="Password" />
+                    <button class="icon-btn" onclick="togglePassword()">👁</button>
+                </div>
+                <a href="#" class="link right">Get password</a>
+
+                <div class="dropdown">
+                    <span>Start In:</span>
+                    <select>
+                        <option>Overview</option>
+                        <option>Accounts</option>
+                        <option>Deposits</option>
+                        <option>Cards</option>
+                    </select>
+                </div>
+
+                <button class="submit-btn" onclick="login()">Login</button>
+
+                <p class="trouble">Trouble logging in?</p>
+
+                <div class="demo-link">
+                    <span>▶ Must watch demo videos for banking</span>
+                    <span>›</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
